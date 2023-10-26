@@ -11,7 +11,7 @@ import Button from "./Button";
 import useAuthModal from "@/hooks/useAuthModal";
 import { useSupabaseClient } from "@supabase/auth-helpers-react";
 import { useUser } from "@/hooks/useUser";
-import { toast } from "react-hot-toast/headless";
+import toast from "react-hot-toast";
 
 interface HeaderProps {
   children: React.ReactNode;
