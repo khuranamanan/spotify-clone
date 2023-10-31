@@ -16,7 +16,7 @@ function Player() {
   }
 
   return (
-    <div className="fixed bottom-0 w-full bg-black py-2 h-20 px-4">
+    <div className="fixed bottom-0 w-full bg-black py-2 px-4">
       <PlayerContent key={songUrl} song={song} songUrl={songUrl} />
     </div>
   );
