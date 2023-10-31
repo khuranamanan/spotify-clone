@@ -43,7 +43,7 @@ export default function Sidebar({ children, songs }: SidebarProps) {
     <div
       className={twMerge(
         `flex h-full`,
-        player.activeId && "h-[calc(100%-80px)]"
+        player.activeId && "h-[calc(100%-120px)] md:h-[calc(100%-104px)]"
       )}
     >
       <div className="hidden md:flex flex-col gap-y-2 bg-black h-full w-[300px] p-2">
