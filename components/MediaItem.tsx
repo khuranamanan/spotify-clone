@@ -14,8 +14,6 @@ function MediaItem({ data, onClick }: MediaItemProps) {
     if (onClick) {
       return onClick(data.id);
     }
-
-    // TODO: Turn on the player
   }
 
   return (
