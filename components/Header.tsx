@@ -4,7 +4,6 @@ import React from "react";
 import { useRouter } from "next/navigation";
 import { twMerge } from "tailwind-merge";
 import { RxCaretLeft, RxCaretRight } from "react-icons/rx";
-import { FaUserAlt } from "react-icons/fa";
 import { HiHome } from "react-icons/hi";
 import { BiSearch } from "react-icons/bi";
 import Button from "./Button";
@@ -72,17 +71,9 @@ export default function Header({ children, className }: HeaderProps) {
 
         <div className="flex justify-between items-center gap-x-4">
           {user ? (
-            <div className="flex gap-x-4 items-center">
-              <Button onClick={handleLogout} className="bg-white px-6 py-2">
-                Logout
-              </Button>
-              <Button
-                onClick={() => router.push("/account")}
-                className="bg-white"
-              >
-                <FaUserAlt />
-              </Button>
-            </div>
+            <Button onClick={handleLogout} className="bg-white px-6 py-2">
+              Logout
+            </Button>
           ) : (
             <>
               <div>
