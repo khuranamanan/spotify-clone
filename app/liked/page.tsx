@@ -1,5 +1,5 @@
 import getLikedSongs from "@/actions/getLikedSongs";
-import Heaader from "@/components/Heaader";
+import Header from "@/components/Header";
 import Image from "next/image";
 import LikedContent from "./components/LikedContent";
 
@@ -10,7 +10,7 @@ async function Liked() {
 
   return (
     <div className="bg-neutral-900 rounded-lg w-full h-full overflow-hidden overflow-y-auto">
-      <Heaader>
+      <Header>
         <div className="mt-20">
           <div className="flex flex-col md:flex-row items-center gap-x-5">
             <div className="relative h-32 w-32 lg:w-44 lg:h-44">
@@ -29,7 +29,7 @@ async function Liked() {
             </div>
           </div>
         </div>
-      </Heaader>
+      </Header>
       <LikedContent songs={songs} />
     </div>
   );
